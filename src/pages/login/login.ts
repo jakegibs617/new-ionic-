@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
+import { FacebookAuth, User, AuthLoginResult } from '@ionic/cloud-angular';
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -14,10 +16,19 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  loginDetails: AuthLoginResult;
+
+  constructor(private facebook: FacebookAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
-  login(){
-    this.navCtrl.setRoot(TabsPage);
+
+  async login():Promise<void>{
+    // try {
+      this.loginDetails = await this.facebook.login()
+      // console.log(this.loginDetails);
+    // }
+    // catch(e){
+    //   console.error(e);
+    // }
   }
 
   ionViewDidLoad() {

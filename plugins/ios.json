@@ -1,0 +1,35 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-facebook4": {
+            "APP_ID": "327619444317420",
+            "APP_NAME": "event-feeds",
+            "PACKAGE_NAME": "com.jacobgiberson.eventfeeds"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.jacobgiberson.eventfeeds"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.jacobgiberson.eventfeeds"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.jacobgiberson.eventfeeds"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.jacobgiberson.eventfeeds"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.jacobgiberson.eventfeeds"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.jacobgiberson.eventfeeds"
+        }
+    },
+    "dependent_plugins": {}
+}
